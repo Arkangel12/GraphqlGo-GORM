@@ -1,0 +1,11 @@
+{
+  "Name":"GraphqlGo-GORM",
+  "Server": "localhost:8000",
+  "Host" : "Host",
+  "Port" : "Port",
+  "Dbname" : "Database Name",
+  "User" : "User",
+  "Password" : "Password",
+  "Email":"tuemail@gmail.com",
+  "EPassword":"password"
+}
