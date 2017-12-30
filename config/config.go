@@ -6,9 +6,6 @@ import (
 	"os"
 )
 
-//ConfigFilePath Ruta del archivo del archivo config.json.
-var ConfigFilePath string
-
 // Configuration Contains basic settings for connection to db
 type Configuration struct {
 	Name        string
@@ -22,16 +19,13 @@ type Configuration struct {
 	EPassword 	string
 }
 
-func init() {
-	ConfigFilePath = "./config.json"
-}
-
 //AppConfig Almacena la configuración del archivo config.json.
 var AppConfig Configuration
 
 //LoadAppConfig Lee el archivo config.json y lo decodifica en AppConfig
 func LoadAppConfig() {
 
+	ConfigFilePath := "./config.json"
 	file, err := os.Open(ConfigFilePath)
 
 	defer file.Close()
